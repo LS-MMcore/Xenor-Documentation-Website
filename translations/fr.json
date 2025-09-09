@@ -1,0 +1,158 @@
+{
+  "footer": {
+    "allRightsReserved": "Tous droits réservés",
+    "termsOfService": "Conditions d’utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "poweredBy": "Propulsé par"
+  },
+  "apiDocs": {
+    "title": "Documentation API Xenor",
+    "subtitle": "Référence complète pour intégrer notre plateforme d’expédition multi-transporteurs",
+    "quickStart": "Démarrage rapide",
+    "getUpAndRunning": "Mise en route",
+    "signUpForAccount": "Créer un compte",
+    "includeAuthUser": "Incluez vos AUTH_USER et AUTH_PW pour vous authentifier.",
+    "verifyCredentials": "Vérifiez vos identifiants",
+    "startProcessing": "Commencez à traiter les envois",
+    "exampleAuthentication": "Exemple : Authentification",
+    "basicExample": "Exemple basique",
+    "endpointsTitle": "Points de terminaison API",
+    "completeReference": "Référence complète",
+    "parameters": "Paramètres",
+    "queryParameters": "Paramètres de requête",
+    "default": "Par défaut",
+    "values": "Valeurs",
+    "response": "Réponse",
+    "example": "Exemple",
+    "authentication": "Authentification",
+    "secureYourApi": "Sécurisez votre API",
+    "headerAuthentication": "Authentification par en-tête",
+    "securityNote": "Note de sécurité",
+    "keepCredentialsSecure": "Gardez vos identifiants en sécurité.",
+    "neverExpose": "Ne les exposez jamais.",
+    "useEnvironmentVariables": "Utilisez des variables d’environnement.",
+    "additionalResources": "Ressources supplémentaires",
+    "everythingYouNeed": "Tout ce qu’il vous faut",
+    "postmanCollection": "Collection Postman",
+    "getSupport": "Obtenir de l’aide",
+    "changelog": "Journal des modifications",
+    "changelogSubtitle": "Restez informé des dernières évolutions et améliorations",
+    "stayUpdated": "Rester informé",
+    "backToDocumentation": "Retour à la documentation",
+    "badges": {
+      "restApi": "REST API",
+      "realTimeTracking": "Suivi en temps réel",
+      "manifestProcessing": "Traitement des manifestes",
+      "multiCarrier": "Multi-transporteurs"
+    },
+    "statusCodes": "Codes d’état",
+    "statusCodesIntro": "Codes d’état retournés dans les réponses de suivi avec leurs descriptions",
+    "endpoints": {
+      "auth": {
+        "description": "Authentifier et valider vos identifiants API"
+      },
+      "tracking": {
+        "description": "Obtenez des informations de suivi détaillées avec des paramètres de requête complets",
+        "query": {
+          "lang": "Définit la langue de la réponse API",
+          "flightTrackingSetting": "Définit la gestion du suivi de vol / lettre de transport",
+          "type": "Spécifie le type de suivi utilisé",
+          "trackingDetails": "Définit le niveau de détail de la réponse de suivi"
+        }
+      },
+      "action": {
+        "description": "Demander une étiquette transporteur pour un pays donné avec diverses options de sortie",
+        "query": {
+          "pl": "Y = Afficher l’étiquette PDF, N = obtenir un résultat JSON",
+          "dhlzpl": "Y = obtenir l’étiquette DHL au format JSON, N = obtenir une URL pour récupérer le PDF",
+          "zpl": "Y = obtenir l’étiquette ZPL si prise en charge",
+          "o": "La sortie sera au format JSON",
+          "dl": "Y = l’étiquette sera retournée dans cet appel"
+        }
+      },
+      "postManifest": {
+        "description": "Téléverser les données de manifeste dans la base pour le traitement des envois (prise en charge des envois groupés)",
+        "query": {
+          "ls": "Y = Verrouiller les données du manifeste (s’il n’y a pas d’erreurs), N = Ne pas les verrouiller. APPLICABLE UNIQUEMENT AUX LETTRES DE TRANSPORT AÉRIEN (AWB)"
+        }
+      },
+      "lockShipment": {
+        "description": "Verrouiller un envoi pour empêcher toute modification (AWB uniquement). Indique que l’envoi est terminé."
+      }
+    },
+    "statusCodeDescriptions": {
+      "97": "Manifeste établi pour la douane",
+      "98": "Données d’étiquette pré-enregistrées",
+      "99": "Étiquette créée",
+      "200": "Déclaration d’expédition",
+      "201": "Arrivée expédition",
+      "202": "Documentation d’expédition",
+      "203": "Modification d’expédition",
+      "204": "Annulation d’expédition",
+      "205": "Début du dédouanement",
+      "207": "Problème douanier",
+      "208": "Confisqué",
+      "209": "Retenu par la douane",
+      "210": "Documents requis",
+      "211": "Accepté",
+      "213": "Colis dédouané",
+      "214": "Dédouanement manuel",
+      "215": "Annulé",
+      "216": "Arrivé en agence / site",
+      "217": "Prêt pour le dernier kilomètre",
+      "218": "Transmis au dernier kilomètre",
+      "219": "Course assignée",
+      "2000": "Le fret est en cours de suivi",
+      "2001": "Informations envoyées, en attente de prise en charge par le logisticien",
+      "2002": "Le logisticien a pris en charge le fret",
+      "2003": "En transit",
+      "2004": "Le fret est arrivé à destination",
+      "2005": "Notifier le destinataire de venir récupérer le fret",
+      "2006": "Le fret a été livré au destinataire",
+      "2007": "Colis perdus, endommagés, retournés, non réclamés, etc.",
+      "2008": "Délai d’expédition trop long",
+      "3000": "Colis arrivé dans une agence",
+      "3001": "Scan de départ",
+      "3004": "Détails du colis mis à jour",
+      "3005": "Colis arrivé chez le transporteur du dernier km",
+      "3050": "Colis parti de l’agence",
+      "5000": "Colis en cours de livraison",
+      "5001": "Colis en livraison au destinataire",
+      "5002": "SMS de notification envoyé au destinataire",
+      "5003": "Colis en livraison vers consigne/locker",
+      "5004": "Colis en livraison vers point relais",
+      "7000": "Destinataire absent, deuxième passage :",
+      "7001": "Destinataire absent, colis stocké 5 jours en agence",
+      "7002": "Destinataire absent",
+      "7003": "Destinataire absent, colis à retirer en point relais",
+      "7004": "Stocké jusqu’à demande",
+      "8000": "Retour à l’expéditeur",
+      "8001": "Envoi annulé",
+      "8500": "Informations supplémentaires",
+      "9000": "Livré",
+      "9001": "Livré aux voisins",
+      "9002": "Livré en point relais",
+      "9003": "Livré en consigne",
+      "9004": "Livré en lieu sûr",
+      "9005": "Colis récupéré",
+      "9006": "Retour livré",
+      "9500": "Refusé",
+      "9501": "Colis non retiré",
+      "9502": "Colis non distribué",
+      "9503": "Colis réacheminé vers une nouvelle adresse",
+      "9600": "Adresse incorrecte"
+    },
+    "common": {
+      "back": "Retour",
+      "loading": "Chargement…",
+      "error": "Erreur",
+      "success": "Succès",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "save": "Enregistrer",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "close": "Fermer"
+    }
+  }
+}

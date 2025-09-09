@@ -1,0 +1,158 @@
+{
+  "footer": {
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "termsOfService": "Nutzungsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "poweredBy": "Bereitgestellt von"
+  },
+  "apiDocs": {
+    "title": "Xenor API-Dokumentation",
+    "subtitle": "Vollständige Referenz zur Integration in unsere Multi-Carrier-Versandplattform",
+    "quickStart": "Schnellstart",
+    "getUpAndRunning": "Schnell loslegen",
+    "signUpForAccount": "Konto erstellen",
+    "includeAuthUser": "AUTH_USER und AUTH_PW zur Authentifizierung angeben.",
+    "verifyCredentials": "Zugangsdaten verifizieren",
+    "startProcessing": "Mit der Sendungsabwicklung starten",
+    "exampleAuthentication": "Beispiel: Authentifizierung",
+    "basicExample": "Einfaches Beispiel",
+    "endpointsTitle": "API-Endpunkte",
+    "completeReference": "Vollständige Referenz",
+    "parameters": "Parameter",
+    "queryParameters": "Query-Parameter",
+    "default": "Standard",
+    "values": "Werte",
+    "response": "Antwort",
+    "example": "Beispiel",
+    "authentication": "Authentifizierung",
+    "secureYourApi": "Sichern Sie Ihre API",
+    "headerAuthentication": "Header-Authentifizierung",
+    "securityNote": "Sicherheitshinweis",
+    "keepCredentialsSecure": "Bewahren Sie Ihre Zugangsdaten sicher auf.",
+    "neverExpose": "Geben Sie sie niemals preis.",
+    "useEnvironmentVariables": "Verwenden Sie Umgebungsvariablen.",
+    "additionalResources": "Weitere Ressourcen",
+    "everythingYouNeed": "Alles, was Sie brauchen",
+    "postmanCollection": "Postman-Collection",
+    "getSupport": "Support erhalten",
+    "changelog": "Changelog",
+    "changelogSubtitle": "Bleiben Sie über die neuesten Änderungen und Verbesserungen informiert",
+    "stayUpdated": "Auf dem Laufenden bleiben",
+    "backToDocumentation": "Zurück zur Dokumentation",
+    "badges": {
+      "restApi": "REST API",
+      "realTimeTracking": "Echtzeit-Tracking",
+      "manifestProcessing": "Manifest-Verarbeitung",
+      "multiCarrier": "Multi-Carrier"
+    },
+    "statusCodes": "Statuscodes",
+    "statusCodesIntro": "Statuscodes in Tracking-Antworten und ihre Beschreibungen",
+    "endpoints": {
+      "auth": {
+        "description": "API-Zugangsdaten authentifizieren und validieren"
+      },
+      "tracking": {
+        "description": "Detaillierte Tracking-Informationen mit umfassenden Query-Parametern abrufen",
+        "query": {
+          "lang": "Legt die Sprache der API-Antwort fest",
+          "flightTrackingSetting": "Definiert die Behandlung von Flug-/Airwaybill-Tracking",
+          "type": "Gibt den verwendeten Tracking-Typ an",
+          "trackingDetails": "Definiert den Detailgrad der Tracking-Antwort"
+        }
+      },
+      "action": {
+        "description": "Carrier-Label für ein bestimmtes Land anfordern – mit verschiedenen Ausgabeoptionen",
+        "query": {
+          "pl": "Y = PDF-Label anzeigen, N = JSON-Ergebnis zurückgeben",
+          "dhlzpl": "Y = DHL-JSON-Label, N = URL zum PDF",
+          "zpl": "Y = ZPL-Label, falls vom Carrier unterstützt",
+          "o": "Ausgabe im JSON-Format",
+          "dl": "Y = Label wird in diesem Aufruf zurückgegeben"
+        }
+      },
+      "postManifest": {
+        "description": "Manifestdaten zum Versand in die Datenbank hochladen (unterstützt Bulk-Uploads)",
+        "query": {
+          "ls": "Y = Manifestdaten sperren (sofern fehlerfrei), N = nicht sperren. NUR FÜR AIRWAYBILLS"
+        }
+      },
+      "lockShipment": {
+        "description": "Sendung sperren, um weitere Änderungen zu verhindern (nur Airwaybills). Signalisiert Abschluss der Sendung."
+      }
+    },
+    "statusCodeDescriptions": {
+      "97": "Für den Zoll manifestiert",
+      "98": "Labeldaten vorregistriert",
+      "99": "Label erstellt",
+      "200": "Versanddeklaration",
+      "201": "Versand eingetroffen",
+      "202": "Versanddokumentation",
+      "203": "Versandänderung",
+      "204": "Versandstornierung",
+      "205": "Zollabfertigung gestartet",
+      "207": "Zollproblem",
+      "208": "Beschlagnahmt",
+      "209": "Vom Zoll zurückgehalten",
+      "210": "Dokumente erforderlich",
+      "211": "Akzeptiert",
+      "213": "Sendung verzollt",
+      "214": "Manuell verzollt",
+      "215": "Storniert",
+      "216": "Im Depot eingetroffen",
+      "217": "Bereit für die Letzte Meile",
+      "218": "An Letzte Meile übergeben",
+      "219": "Tour/Job zugewiesen",
+      "2000": "Fracht wird verfolgt",
+      "2001": "Informationen gesendet, warte auf Abholung durch Logistiker",
+      "2002": "Logistiker hat die Fracht übernommen",
+      "2003": "Unterwegs",
+      "2004": "Fracht am Ziel eingetroffen",
+      "2005": "Empfänger zur Abholung benachrichtigen",
+      "2006": "Fracht an Empfänger zugestellt",
+      "2007": "Pakete verloren, beschädigt, retourniert, nicht abgeholt etc.",
+      "2008": "Versanddauer zu lang",
+      "3000": "Paket hat ein Depot erreicht",
+      "3001": "Ausgangsscan",
+      "3004": "Paketdetails aktualisiert",
+      "3005": "Paket beim Last-Mile-Carrier eingetroffen",
+      "3050": "Paket hat das Depot verlassen",
+      "5000": "Zustellung läuft",
+      "5001": "Zustellung an den Empfänger unterwegs",
+      "5002": "SMS-Benachrichtigung an Empfänger gesendet",
+      "5003": "Zustellung an Paketstation/Locker",
+      "5004": "Zustellung an Paketshop",
+      "7000": "Empfänger nicht angetroffen, zweiter Versuch:",
+      "7001": "Empfänger nicht angetroffen, Lagerung 5 Tage im Depot",
+      "7002": "Empfänger nicht angetroffen",
+      "7003": "Empfänger nicht angetroffen, Abholung im Shop möglich",
+      "7004": "Bis auf Abruf eingelagert",
+      "8000": "Rücksendung an Absender",
+      "8001": "Sendung storniert",
+      "8500": "Zusatzinformation",
+      "9000": "Zugestellt",
+      "9001": "Beim Nachbarn zugestellt",
+      "9002": "Im Paketshop zugestellt",
+      "9003": "In Paketbox/Locker zugestellt",
+      "9004": "An einem sicheren Ort zugestellt",
+      "9005": "Paket abgeholt",
+      "9006": "Retoure zugestellt",
+      "9500": "Annahme verweigert",
+      "9501": "Paket nicht abgeholt",
+      "9502": "Paket nicht zugestellt",
+      "9503": "Paket an neue Adresse umgeleitet",
+      "9600": "Falsche Adressdaten"
+    },
+    "common": {
+      "back": "Zurück",
+      "loading": "Laden...",
+      "error": "Fehler",
+      "success": "Erfolg",
+      "cancel": "Abbrechen",
+      "confirm": "Bestätigen",
+      "save": "Speichern",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "close": "Schließen"
+    }
+  }
+}

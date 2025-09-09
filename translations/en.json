@@ -1,0 +1,158 @@
+{
+  "footer": {
+    "allRightsReserved": "All rights reserved",
+    "termsOfService": "Terms of service",
+    "privacyPolicy": "Privacy policy",
+    "poweredBy": "Powered by"
+  },
+  "apiDocs": {
+    "title": "Xenor API Documentation",
+    "subtitle": "Complete reference for integrating with our multi-carrier shipping platform",
+    "quickStart": "Quick Start",
+    "getUpAndRunning": "Get up and running",
+    "signUpForAccount": "Sign up for an account",
+    "includeAuthUser": "Include your AUTH_USER and AUTH_PW to authenticate.",
+    "verifyCredentials": "Verify your credentials",
+    "startProcessing": "Start processing shipments",
+    "exampleAuthentication": "Example: Authentication",
+    "basicExample": "Basic example",
+    "endpointsTitle": "API Endpoints",
+    "completeReference": "Complete reference",
+    "parameters": "Parameters",
+    "queryParameters": "Query Parameters",
+    "default": "Default",
+    "values": "Values",
+    "response": "Response",
+    "example": "Example",
+    "authentication": "Authentication",
+    "secureYourApi": "Secure your API",
+    "headerAuthentication": "Header Authentication",
+    "securityNote": "Security Note",
+    "keepCredentialsSecure": "Keep your credentials secure.",
+    "neverExpose": "Never expose them.",
+    "useEnvironmentVariables": "Use environment variables.",
+    "additionalResources": "Additional Resources",
+    "everythingYouNeed": "Everything you need",
+    "postmanCollection": "Postman Collection",
+    "getSupport": "Get Support",
+    "changelog": "Changelog",
+    "changelogSubtitle": "Stay up to date with the latest changes and improvements",
+    "stayUpdated": "Stay Updated",
+    "backToDocumentation": "Back to Documentation",
+    "badges": {
+      "restApi": "REST API",
+      "realTimeTracking": "Real-time Tracking",
+      "manifestProcessing": "Manifest Processing",
+      "multiCarrier": "Multi-carrier"
+    },
+    "statusCodes": "Status Codes",
+    "statusCodesIntro": "Status codes returned in tracking responses with their descriptions",
+    "endpoints": {
+      "auth": {
+        "description": "Authenticate and validate your API credentials"
+      },
+      "tracking": {
+        "description": "Get detailed tracking information for shipments with comprehensive query parameters",
+        "query": {
+          "lang": "Sets the language for the API response",
+          "flightTrackingSetting": "Defines how flight/waybill tracking should be handled",
+          "type": "Specifies the type of tracking being used",
+          "trackingDetails": "Defines the level of detail in the tracking response"
+        }
+      },
+      "action": {
+        "description": "Request a carrier label for a specific country with various output options",
+        "query": {
+          "pl": "Y = Show PDF label, N = get JSON result",
+          "dhlzpl": "Y = get DHL JSON Label, N = get URL to get PDF",
+          "zpl": "Y = get ZPL label if carrier supports it",
+          "o": "Output will be in JSON format",
+          "dl": "Y = the label will be called within this call"
+        }
+      },
+      "postManifest": {
+        "description": "Upload manifest data to the database for shipment processing (supports bulk uploads)",
+        "query": {
+          "ls": "Y = Lock manifest data (if there are no errors), N = Don't lock manifest data. ONLY APPLICABLE FOR AIRWAYBILLS"
+        }
+      },
+      "lockShipment": {
+        "description": "Lock a shipment to prevent further changes (Airwaybills only). This notifies that the shipment is complete."
+      }
+    },
+    "statusCodeDescriptions": {
+      "97": "Manifested for customs",
+      "98": "Label data has been pre-registered",
+      "99": "Label has been created",
+      "200": "Dispatch declaration",
+      "201": "Dispatch arrival",
+      "202": "Dispatch documentation",
+      "203": "Dispatch amendment",
+      "204": "Dispatch cancellation",
+      "205": "Customs clearance started",
+      "207": "Customs Issue",
+      "208": "Confiscated",
+      "209": "Held by customs",
+      "210": "Needs documents",
+      "211": "Accepted",
+      "213": "Parcel cleared",
+      "214": "Cleared manually",
+      "215": "Cancelled",
+      "216": "Arrived in facility",
+      "217": "Ready for last mile",
+      "218": "Released to last mile",
+      "219": "Job dispatched",
+      "2000": "The cargo is being tracked",
+      "2001": "Information has been sent, waiting for the logistics provider to pick up the cargo",
+      "2002": "The logistics provider gets the cargo",
+      "2003": "In transit",
+      "2004": "The cargo arrived at their destination",
+      "2005": "Notify the consignee to pick up the cargo",
+      "2006": "The cargo is delivered to the consignee",
+      "2007": "Packages were lost, damaged, returned, unclaimed, etc",
+      "2008": "Shipping time too long",
+      "3000": "Parcel has reached a depot",
+      "3001": "Outbound scan",
+      "3004": "Parcel details updated",
+      "3005": "Parcel has arrived at the last-mile carrier",
+      "3050": "Parcel has left the depot",
+      "5000": "Parcel is out for delivery",
+      "5001": "Parcel is out for delivery to recipient",
+      "5002": "A text message notification has been sent to the recipient",
+      "5003": "Parcel is out for delivery to parcel locker",
+      "5004": "Parcel is out for delivery to parcel shop",
+      "7000": "Recipient was not at home, second try:",
+      "7001": "Recipient was not at home, package will be stored on the depot for 5 days",
+      "7002": "Recipient was not at home",
+      "7003": "Recipient was not at home, package can be picked up at a collection point",
+      "7004": "Stored until requested",
+      "8000": "Return to sender",
+      "8001": "Shipment canceled",
+      "8500": "Extra information",
+      "9000": "Delivered",
+      "9001": "Package is delivered to the neighbors",
+      "9002": "Package is delivered to the parcelshop",
+      "9003": "Package is delivered to the parcelbox",
+      "9004": "Package is delivered to a secure place",
+      "9005": "Package is collected",
+      "9006": "Return delivered",
+      "9500": "Refused",
+      "9501": "Package was not picked up",
+      "9502": "Package was not delivered",
+      "9503": "Package is rerouted to a new address",
+      "9600": "Incorrect address details"
+    },
+    "common": {
+      "back": "Back",
+      "loading": "Loading...",
+      "error": "Error",
+      "success": "Success",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "save": "Save",
+      "edit": "Edit",
+      "delete": "Delete",
+      "close": "Close"
+    }
+  }
+}

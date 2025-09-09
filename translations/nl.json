@@ -1,0 +1,158 @@
+{
+  "footer": {
+    "allRightsReserved": "Alle rechten voorbehouden",
+    "termsOfService": "Gebruiksvoorwaarden",
+    "privacyPolicy": "Privacybeleid",
+    "poweredBy": "Aangedreven door"
+  },
+  "apiDocs": {
+    "title": "Xenor API-documentatie",
+    "subtitle": "Volledige referentie voor integratie met ons multi-carrier verzendplatform",
+    "quickStart": "Snelstart",
+    "getUpAndRunning": "Snel aan de slag",
+    "signUpForAccount": "Maak een account aan",
+    "includeAuthUser": "Voeg uw AUTH_USER en AUTH_PW toe om te authenticeren.",
+    "verifyCredentials": "Verifieer uw inloggegevens",
+    "startProcessing": "Begin met het verwerken van zendingen",
+    "exampleAuthentication": "Voorbeeld: Authenticatie",
+    "basicExample": "Eenvoudig voorbeeld",
+    "endpointsTitle": "API-eindpunten",
+    "completeReference": "Volledige referentie",
+    "parameters": "Parameters",
+    "queryParameters": "Queryparameters",
+    "default": "Standaard",
+    "values": "Waarden",
+    "response": "Respons",
+    "example": "Voorbeeld",
+    "authentication": "Authenticatie",
+    "secureYourApi": "Beveilig uw API",
+    "headerAuthentication": "Header-authenticatie",
+    "securityNote": "Beveiligingsopmerking",
+    "keepCredentialsSecure": "Houd uw inloggegevens veilig.",
+    "neverExpose": "Stel ze nooit bloot.",
+    "useEnvironmentVariables": "Gebruik omgevingsvariabelen.",
+    "additionalResources": "Aanvullende resources",
+    "everythingYouNeed": "Alles wat u nodig heeft",
+    "postmanCollection": "Postman-collectie",
+    "getSupport": "Vraag ondersteuning aan",
+    "changelog": "Changelog",
+    "changelogSubtitle": "Blijf op de hoogte van de nieuwste wijzigingen en verbeteringen",
+    "stayUpdated": "Blijf op de hoogte",
+    "backToDocumentation": "Terug naar documentatie",
+    "badges": {
+      "restApi": "REST API",
+      "realTimeTracking": "Realtime tracking",
+      "manifestProcessing": "Manifestverwerking",
+      "multiCarrier": "Multi-carrier"
+    },
+    "statusCodes": "Statuscodes",
+    "statusCodesIntro": "Statuscodes die in trackingantwoorden worden teruggegeven met hun beschrijvingen",
+    "endpoints": {
+      "auth": {
+        "description": "Authenticate en valideer uw API-inloggegevens"
+      },
+      "tracking": {
+        "description": "Verkrijg gedetailleerde trackinginformatie voor zendingen met uitgebreide queryparameters",
+        "query": {
+          "lang": "Stelt de taal in voor het API-antwoord",
+          "flightTrackingSetting": "Bepaalt hoe flight/waybill tracking moet worden afgehandeld",
+          "type": "Specificeert het type tracking dat wordt gebruikt",
+          "trackingDetails": "Bepaalt het detailniveau in het trackingantwoord"
+        }
+      },
+      "action": {
+        "description": "Vraag een vervoerderslabel aan voor een specifiek land met diverse uitvoeropties",
+        "query": {
+          "pl": "Y = Toon PDF-label, N = ontvang JSON-resultaat",
+          "dhlzpl": "Y = ontvang DHL JSON Label, N = ontvang URL om PDF op te halen",
+          "zpl": "Y = ontvang ZPL-label indien ondersteund door de vervoerder",
+          "o": "Uitvoer zal in JSON-formaat zijn",
+          "dl": "Y = het label wordt binnen deze call opgehaald"
+        }
+      },
+      "postManifest": {
+        "description": "Upload manifestgegevens naar de database voor zendingverwerking (ondersteunt bulkuploads)",
+        "query": {
+          "ls": "Y = Vergrendel manifestgegevens (als er geen fouten zijn), N = Vergrendel manifestgegevens niet. ALLEEN VAN TOEPASSING OP AIRWAYBILLS"
+        }
+      },
+      "lockShipment": {
+        "description": "Vergrendel een zending om verdere wijzigingen te voorkomen (alleen Airwaybills). Dit geeft aan dat de zending is voltooid."
+      }
+    },
+    "statusCodeDescriptions": {
+      "97": "Gemanifesteerd voor douane",
+      "98": "Labelgegevens zijn vooringeschreven",
+      "99": "Label is aangemaakt",
+      "200": "Dispatch-verklaring",
+      "201": "Aankomst dispatch",
+      "202": "Dispatch-documentatie",
+      "203": "Wijziging dispatch",
+      "204": "Annulering dispatch",
+      "205": "Douane-afhandeling gestart",
+      "207": "Douaneprobleem",
+      "208": "In beslag genomen",
+      "209": "Vastgehouden door douane",
+      "210": "Documenten nodig",
+      "211": "Geaccepteerd",
+      "213": "Pakket vrijgegeven",
+      "214": "Handmatig vrijgegeven",
+      "215": "Geannuleerd",
+      "216": "Aangekomen in sorteercentrum",
+      "217": "Gereed voor last mile",
+      "218": "Vrijgegeven voor last mile",
+      "219": "Opdracht uitgegeven",
+      "2000": "De zending wordt gevolgd",
+      "2001": "Informatie is verzonden, wachten op afhaling door de logistieke dienstverlener",
+      "2002": "De logistieke dienstverlener heeft de zending opgehaald",
+      "2003": "In transit",
+      "2004": "De zending is op de bestemming aangekomen",
+      "2005": "Ontvanger geïnformeerd om de zending op te halen",
+      "2006": "De zending is afgeleverd bij de ontvanger",
+      "2007": "Pakketten zijn verloren gegaan, beschadigd, geretourneerd, niet opgeëist, etc.",
+      "2008": "Verzendtijd te lang",
+      "3000": "Pakket heeft een depot bereikt",
+      "3001": "Uitgaande scan",
+      "3004": "Pakketdetails bijgewerkt",
+      "3005": "Pakket is aangekomen bij de last-mile vervoerder",
+      "3050": "Pakket heeft het depot verlaten",
+      "5000": "Pakket is uit voor bezorging",
+      "5001": "Pakket is uit voor bezorging aan ontvanger",
+      "5002": "Een sms-notificatie is naar de ontvanger gestuurd",
+      "5003": "Pakket is uit voor bezorging naar pakketkluis",
+      "5004": "Pakket is uit voor bezorging naar pakketpunt",
+      "7000": "Ontvanger was niet thuis, tweede poging:",
+      "7001": "Ontvanger was niet thuis, pakket wordt 5 dagen opgeslagen op het depot",
+      "7002": "Ontvanger was niet thuis",
+      "7003": "Ontvanger was niet thuis, pakket kan worden opgehaald bij een afhaalpunt",
+      "7004": "Opgeslagen tot nader order",
+      "8000": "Retour naar afzender",
+      "8001": "Zending geannuleerd",
+      "8500": "Extra informatie",
+      "9000": "Bezorgd",
+      "9001": "Pakket is bij de buren bezorgd",
+      "9002": "Pakket is afgeleverd bij het pakketpunt",
+      "9003": "Pakket is afgeleverd in de pakketkluis",
+      "9004": "Pakket is op een veilige plaats afgeleverd",
+      "9005": "Pakket is opgehaald",
+      "9006": "Retour bezorgd",
+      "9500": "Geweigerd",
+      "9501": "Pakket is niet opgehaald",
+      "9502": "Pakket is niet bezorgd",
+      "9503": "Pakket wordt omgeleid naar een nieuw adres",
+      "9600": "Onjuiste adresgegevens"
+    },
+    "common": {
+      "back": "Terug",
+      "loading": "Laden...",
+      "error": "Fout",
+      "success": "Gelukt",
+      "cancel": "Annuleren",
+      "confirm": "Bevestigen",
+      "save": "Opslaan",
+      "edit": "Bewerken",
+      "delete": "Verwijderen",
+      "close": "Sluiten"
+    }
+  }
+}

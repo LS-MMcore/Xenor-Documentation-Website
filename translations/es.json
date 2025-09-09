@@ -1,0 +1,158 @@
+{
+    "footer": {
+        "allRightsReserved": "Todos los derechos reservados",
+        "termsOfService": "Términos del servicio",
+        "privacyPolicy": "Política de privacidad",
+        "poweredBy": "Desarrollado por"
+    },
+    "apiDocs": {
+        "title": "Documentación de la API de Xenor",
+        "subtitle": "Referencia completa para integrar nuestra plataforma de envíos multi-transportista",
+        "quickStart": "Inicio rápido",
+        "getUpAndRunning": "Ponte en marcha",
+        "signUpForAccount": "Crea una cuenta",
+        "includeAuthUser": "Incluye tu AUTH_USER y AUTH_PW para autenticarte.",
+        "verifyCredentials": "Verifica tus credenciales",
+        "startProcessing": "Empieza a procesar envíos",
+        "exampleAuthentication": "Ejemplo: Autenticación",
+        "basicExample": "Ejemplo básico",
+        "endpointsTitle": "Endpoints de la API",
+        "completeReference": "Referencia completa",
+        "parameters": "Parámetros",
+        "queryParameters": "Parámetros de consulta",
+        "default": "Por defecto",
+        "values": "Valores",
+        "response": "Respuesta",
+        "example": "Ejemplo",
+        "authentication": "Autenticación",
+        "secureYourApi": "Protege tu API",
+        "headerAuthentication": "Autenticación por cabecera",
+        "securityNote": "Nota de seguridad",
+        "keepCredentialsSecure": "Mantén tus credenciales seguras.",
+        "neverExpose": "Nunca las expongas.",
+        "useEnvironmentVariables": "Usa variables de entorno.",
+        "additionalResources": "Recursos adicionales",
+        "everythingYouNeed": "Todo lo que necesitas",
+        "postmanCollection": "Colección de Postman",
+        "getSupport": "Obtener soporte",
+        "changelog": "Registro de cambios",
+        "changelogSubtitle": "Mantente al día con las últimas mejoras",
+        "stayUpdated": "Mantenerme actualizado",
+        "backToDocumentation": "Volver a la documentación",
+        "badges": {
+            "restApi": "REST API",
+            "realTimeTracking": "Seguimiento en tiempo real",
+            "manifestProcessing": "Procesamiento de manifiestos",
+            "multiCarrier": "Multi-transportista"
+        },
+        "statusCodes": "Códigos de estado",
+        "statusCodesIntro": "Códigos de estado devueltos en las respuestas de seguimiento con sus descripciones",
+        "endpoints": {
+            "auth": {
+                "description": "Autentica y valida tus credenciales de API"
+            },
+            "tracking": {
+                "description": "Obtén información detallada de seguimiento con parámetros de consulta completos",
+                "query": {
+                    "lang": "Configura el idioma de la respuesta de la API",
+                    "flightTrackingSetting": "Define cómo gestionar el seguimiento de vuelo/guía aérea",
+                    "type": "Especifica el tipo de seguimiento utilizado",
+                    "trackingDetails": "Define el nivel de detalle en la respuesta de seguimiento"
+                }
+            },
+            "action": {
+                "description": "Solicita una etiqueta de transportista para un país específico con varias opciones de salida",
+                "query": {
+                    "pl": "Y = Mostrar etiqueta PDF, N = devolver resultado JSON",
+                    "dhlzpl": "Y = devolver etiqueta DHL en JSON, N = devolver URL para obtener el PDF",
+                    "zpl": "Y = devolver etiqueta ZPL si el transportista la admite",
+                    "o": "La salida será en formato JSON",
+                    "dl": "Y = la etiqueta se devolverá dentro de esta llamada"
+                }
+            },
+            "postManifest": {
+                "description": "Carga datos de manifiesto en la base de datos para el procesamiento de envíos (admite cargas masivas)",
+                "query": {
+                    "ls": "Y = Bloquear los datos del manifiesto (si no hay errores), N = No bloquearlos. SOLO APLICABLE A GUÍAS AÉREAS"
+                }
+            },
+            "lockShipment": {
+                "description": "Bloquea un envío para evitar más cambios (solo guías aéreas). Notifica que el envío está completo."
+            }
+        },
+        "statusCodeDescriptions": {
+            "97": "Manifiesto creado para aduanas",
+            "98": "Datos de etiqueta preregistrados",
+            "99": "Etiqueta creada",
+            "200": "Declaración de expedición",
+            "201": "Llegada de expedición",
+            "202": "Documentación de expedición",
+            "203": "Modificación de expedición",
+            "204": "Cancelación de expedición",
+            "205": "Inicio de despacho aduanero",
+            "207": "Incidencia aduanera",
+            "208": "Confiscado",
+            "209": "Retenido por aduanas",
+            "210": "Se requieren documentos",
+            "211": "Aceptado",
+            "213": "Paquete despachado",
+            "214": "Despacho manual",
+            "215": "Cancelado",
+            "216": "Llegó a la instalación",
+            "217": "Listo para última milla",
+            "218": "Entregado a última milla",
+            "219": "Trabajo asignado",
+            "2000": "La carga está siendo rastreada",
+            "2001": "Información enviada, esperando que el operador logístico recoja la carga",
+            "2002": "El operador logístico ha recogido la carga",
+            "2003": "En tránsito",
+            "2004": "La carga llegó a destino",
+            "2005": "Notificar al consignatario para recoger la carga",
+            "2006": "La carga fue entregada al consignatario",
+            "2007": "Paquetes perdidos, dañados, devueltos, no reclamados, etc.",
+            "2008": "Tiempo de envío demasiado largo",
+            "3000": "El paquete llegó a un centro",
+            "3001": "Escaneo de salida",
+            "3004": "Detalles del paquete actualizados",
+            "3005": "El paquete llegó al transportista de última milla",
+            "3050": "El paquete salió del centro",
+            "5000": "Paquete en reparto",
+            "5001": "Paquete en reparto al destinatario",
+            "5002": "Se envió SMS de notificación al destinatario",
+            "5003": "Paquete en reparto a taquilla/locker",
+            "5004": "Paquete en reparto a punto de recogida",
+            "7000": "Destinatario ausente, segundo intento:",
+            "7001": "Destinatario ausente, el paquete se almacenará en el centro por 5 días",
+            "7002": "Destinatario ausente",
+            "7003": "Destinatario ausente, el paquete puede recogerse en un punto de entrega",
+            "7004": "Almacenado hasta solicitud",
+            "8000": "Devolver al remitente",
+            "8001": "Envío cancelado",
+            "8500": "Información adicional",
+            "9000": "Entregado",
+            "9001": "Entregado a los vecinos",
+            "9002": "Entregado en punto de recogida",
+            "9003": "Entregado en buzón/taquilla",
+            "9004": "Entregado en lugar seguro",
+            "9005": "Paquete recogido",
+            "9006": "Devolución entregada",
+            "9500": "Rechazado",
+            "9501": "Paquete no recogido",
+            "9502": "Paquete no entregado",
+            "9503": "Paquete redirigido a una nueva dirección",
+            "9600": "Datos de dirección incorrectos"
+        },
+        "common": {
+            "back": "Volver",
+            "loading": "Cargando...",
+            "error": "Error",
+            "success": "Éxito",
+            "cancel": "Cancelar",
+            "confirm": "Confirmar",
+            "save": "Guardar",
+            "edit": "Editar",
+            "delete": "Eliminar",
+            "close": "Cerrar"
+        }
+    }
+}

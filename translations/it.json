@@ -1,0 +1,158 @@
+{
+    "footer": {
+        "allRightsReserved": "Tutti i diritti riservati",
+        "termsOfService": "Termini di servizio",
+        "privacyPolicy": "Informativa sulla privacy",
+        "poweredBy": "Offerto da"
+    },
+    "apiDocs": {
+        "title": "Documentazione API Xenor",
+        "subtitle": "Riferimento completo per integrare la nostra piattaforma di spedizione multi-corriere",
+        "quickStart": "Guida rapida",
+        "getUpAndRunning": "Parti subito",
+        "signUpForAccount": "Crea un account",
+        "includeAuthUser": "Includi AUTH_USER e AUTH_PW per autenticarti.",
+        "verifyCredentials": "Verifica le tue credenziali",
+        "startProcessing": "Inizia a processare le spedizioni",
+        "exampleAuthentication": "Esempio: Autenticazione",
+        "basicExample": "Esempio di base",
+        "endpointsTitle": "Endpoint API",
+        "completeReference": "Riferimento completo",
+        "parameters": "Parametri",
+        "queryParameters": "Parametri di query",
+        "default": "Predefinito",
+        "values": "Valori",
+        "response": "Risposta",
+        "example": "Esempio",
+        "authentication": "Autenticazione",
+        "secureYourApi": "Proteggi la tua API",
+        "headerAuthentication": "Autenticazione via header",
+        "securityNote": "Nota di sicurezza",
+        "keepCredentialsSecure": "Mantieni le credenziali al sicuro.",
+        "neverExpose": "Non esporle mai.",
+        "useEnvironmentVariables": "Usa variabili d’ambiente.",
+        "additionalResources": "Risorse aggiuntive",
+        "everythingYouNeed": "Tutto ciò che ti serve",
+        "postmanCollection": "Collection Postman",
+        "getSupport": "Ottieni supporto",
+        "changelog": "Changelog",
+        "changelogSubtitle": "Resta aggiornato su modifiche e miglioramenti",
+        "stayUpdated": "Rimani aggiornato",
+        "backToDocumentation": "Torna alla documentazione",
+        "badges": {
+            "restApi": "REST API",
+            "realTimeTracking": "Tracciamento in tempo reale",
+            "manifestProcessing": "Elaborazione manifest",
+            "multiCarrier": "Multi-corriere"
+        },
+        "statusCodes": "Codici di stato",
+        "statusCodesIntro": "Codici di stato restituiti nelle risposte di tracciamento con le relative descrizioni",
+        "endpoints": {
+            "auth": {
+                "description": "Autentica e valida le tue credenziali API"
+            },
+            "tracking": {
+                "description": "Ottieni informazioni di tracciamento dettagliate con parametri di query completi",
+                "query": {
+                    "lang": "Imposta la lingua della risposta API",
+                    "flightTrackingSetting": "Definisce come gestire il tracciamento volo/waybill",
+                    "type": "Specifica il tipo di tracciamento utilizzato",
+                    "trackingDetails": "Definisce il livello di dettaglio della risposta di tracciamento"
+                }
+            },
+            "action": {
+                "description": "Richiedi un’etichetta corriere per un paese specifico con varie opzioni di output",
+                "query": {
+                    "pl": "Y = Mostra etichetta PDF, N = restituisce risultato JSON",
+                    "dhlzpl": "Y = restituisce etichetta DHL in JSON, N = restituisce URL per ottenere il PDF",
+                    "zpl": "Y = restituisce etichetta ZPL se supportata dal corriere",
+                    "o": "L’output sarà in formato JSON",
+                    "dl": "Y = l’etichetta viene restituita direttamente in questa chiamata"
+                }
+            },
+            "postManifest": {
+                "description": "Carica i dati di manifest nel database per l’elaborazione delle spedizioni (supporta caricamenti in blocco)",
+                "query": {
+                    "ls": "Y = Blocca i dati del manifest (se non ci sono errori), N = Non bloccarli. SOLO PER AIR WAYBILL"
+                }
+            },
+            "lockShipment": {
+                "description": "Blocca una spedizione per impedirne ulteriori modifiche (solo Air Waybill). Notifica che la spedizione è completa."
+            }
+        },
+        "statusCodeDescriptions": {
+            "97": "Manifest creato per la dogana",
+            "98": "Dati etichetta preregistrati",
+            "99": "Etichetta creata",
+            "200": "Dichiarazione di spedizione",
+            "201": "Arrivo spedizione",
+            "202": "Documentazione di spedizione",
+            "203": "Modifica spedizione",
+            "204": "Annullamento spedizione",
+            "205": "Avvio sdoganamento",
+            "207": "Problema doganale",
+            "208": "Confiscato",
+            "209": "Trattenuto dalla dogana",
+            "210": "Documenti necessari",
+            "211": "Accettato",
+            "213": "Pacco sdoganato",
+            "214": "Sdoganamento manuale",
+            "215": "Annullato",
+            "216": "Arrivato in filiale/impianto",
+            "217": "Pronto per l’ultimo miglio",
+            "218": "Consegnato all’ultimo miglio",
+            "219": "Lavoro assegnato al corriere",
+            "2000": "Il carico è in tracciamento",
+            "2001": "Informazioni inviate, in attesa di ritiro dal fornitore logistico",
+            "2002": "Il fornitore logistico ha ritirato il carico",
+            "2003": "In transito",
+            "2004": "Il carico è arrivato a destinazione",
+            "2005": "Notifica al destinatario per il ritiro",
+            "2006": "Il carico è stato consegnato al destinatario",
+            "2007": "Pacchi smarriti, danneggiati, resi, non reclamati, ecc.",
+            "2008": "Tempi di spedizione troppo lunghi",
+            "3000": "Il pacco ha raggiunto un deposito",
+            "3001": "Scansione in uscita",
+            "3004": "Dettagli del pacco aggiornati",
+            "3005": "Il pacco è arrivato al corriere dell’ultimo miglio",
+            "3050": "Il pacco ha lasciato il deposito",
+            "5000": "Pacco in consegna",
+            "5001": "Pacco in consegna al destinatario",
+            "5002": "Inviato SMS di notifica al destinatario",
+            "5003": "Pacco in consegna al locker",
+            "5004": "Pacco in consegna al punto di ritiro",
+            "7000": "Destinatario assente, secondo tentativo:",
+            "7001": "Destinatario assente, il pacco resterà in deposito per 5 giorni",
+            "7002": "Destinatario assente",
+            "7003": "Destinatario assente, ritiro presso punto di raccolta",
+            "7004": "Conservato fino a richiesta",
+            "8000": "Reso al mittente",
+            "8001": "Spedizione annullata",
+            "8500": "Informazioni aggiuntive",
+            "9000": "Consegnato",
+            "9001": "Consegnato ai vicini",
+            "9002": "Consegnato al punto di ritiro",
+            "9003": "Consegnato al parcel box",
+            "9004": "Consegnato in luogo sicuro",
+            "9005": "Pacco ritirato",
+            "9006": "Reso consegnato",
+            "9500": "Rifiutato",
+            "9501": "Pacco non ritirato",
+            "9502": "Pacco non consegnato",
+            "9503": "Pacco instradato a un nuovo indirizzo",
+            "9600": "Dati di indirizzo errati"
+        },
+        "common": {
+            "back": "Indietro",
+            "loading": "Caricamento...",
+            "error": "Errore",
+            "success": "Operazione riuscita",
+            "cancel": "Annulla",
+            "confirm": "Conferma",
+            "save": "Salva",
+            "edit": "Modifica",
+            "delete": "Elimina",
+            "close": "Chiudi"
+        }
+    }
+}

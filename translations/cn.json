@@ -1,0 +1,158 @@
+{
+    "footer": {
+        "allRightsReserved": "版权所有",
+        "termsOfService": "服务条款",
+        "privacyPolicy": "隐私政策",
+        "poweredBy": "技术支持"
+    },
+    "apiDocs": {
+        "title": "Xenor API 文档",
+        "subtitle": "集成我们多承运商运输平台的完整参考",
+        "quickStart": "快速开始",
+        "getUpAndRunning": "快速上手",
+        "signUpForAccount": "注册账户",
+        "includeAuthUser": "包含您的 AUTH_USER 与 AUTH_PW 进行认证。",
+        "verifyCredentials": "验证您的凭证",
+        "startProcessing": "开始处理货件",
+        "exampleAuthentication": "示例：身份验证",
+        "basicExample": "基础示例",
+        "endpointsTitle": "API 端点",
+        "completeReference": "完整参考",
+        "parameters": "参数",
+        "queryParameters": "查询参数",
+        "default": "默认值",
+        "values": "取值",
+        "response": "响应",
+        "example": "示例",
+        "authentication": "认证",
+        "secureYourApi": "保护您的 API",
+        "headerAuthentication": "请求头认证",
+        "securityNote": "安全提示",
+        "keepCredentialsSecure": "请确保凭证安全。",
+        "neverExpose": "切勿暴露它们。",
+        "useEnvironmentVariables": "使用环境变量。",
+        "additionalResources": "更多资源",
+        "everythingYouNeed": "应有尽有",
+        "postmanCollection": "Postman 集合",
+        "getSupport": "获取支持",
+        "changelog": "更新日志",
+        "changelogSubtitle": "随时了解最新变更与改进",
+        "stayUpdated": "保持关注",
+        "backToDocumentation": "返回文档",
+        "badges": {
+            "restApi": "REST API",
+            "realTimeTracking": "实时追踪",
+            "manifestProcessing": "清单处理",
+            "multiCarrier": "多承运商"
+        },
+        "statusCodes": "状态代码",
+        "statusCodesIntro": "追踪响应中返回的状态代码与说明",
+        "endpoints": {
+            "auth": {
+                "description": "验证并校验您的 API 凭证"
+            },
+            "tracking": {
+                "description": "使用丰富的查询参数获取货件的详细追踪信息",
+                "query": {
+                    "lang": "设置 API 响应语言",
+                    "flightTrackingSetting": "定义航班/运单追踪的处理方式",
+                    "type": "指定所用的追踪类型",
+                    "trackingDetails": "定义追踪响应的详细程度"
+                }
+            },
+            "action": {
+                "description": "为特定国家请求承运商标签，支持多种输出选项",
+                "query": {
+                    "pl": "Y = 显示 PDF 标签，N = 返回 JSON 结果",
+                    "dhlzpl": "Y = 获取 DHL JSON 标签，N = 返回获取 PDF 的 URL",
+                    "zpl": "Y = 若承运商支持则返回 ZPL 标签",
+                    "o": "输出将为 JSON 格式",
+                    "dl": "Y = 在本次调用中直接返回标签"
+                }
+            },
+            "postManifest": {
+                "description": "将清单数据上传至数据库以处理货件（支持批量上传）",
+                "query": {
+                    "ls": "Y = 锁定清单数据（若无错误），N = 不锁定清单数据。仅适用于航空运单。"
+                }
+            },
+            "lockShipment": {
+                "description": "锁定货件以防止进一步更改（仅航空运单）。这意味着货件已完成。"
+            }
+        },
+        "statusCodeDescriptions": {
+            "97": "报关清单已建立",
+            "98": "标签数据已预登记",
+            "99": "标签已创建",
+            "200": "发运申报",
+            "201": "发运到达",
+            "202": "发运文件处理",
+            "203": "发运更改",
+            "204": "发运取消",
+            "205": "开始清关",
+            "207": "海关问题",
+            "208": "被没收",
+            "209": "海关扣留",
+            "210": "需要文件",
+            "211": "已接收",
+            "213": "包裹已清关",
+            "214": "手动清关",
+            "215": "已取消",
+            "216": "到达处理中心",
+            "217": "准备进入末端配送",
+            "218": "已交付至末端承运",
+            "219": "派送任务已下发",
+            "2000": "货物正在被追踪",
+            "2001": "信息已发送，等待物流商取件",
+            "2002": "物流商已取件",
+            "2003": "运输中",
+            "2004": "货物已到达目的地",
+            "2005": "通知收件人取件",
+            "2006": "货物已送达收件人",
+            "2007": "包裹丢失、损坏、退回、无人领取等",
+            "2008": "运输时间过长",
+            "3000": "包裹已到达分拨中心",
+            "3001": "出库扫描",
+            "3004": "包裹信息已更新",
+            "3005": "包裹已到达末端承运商",
+            "3050": "包裹已离开分拨中心",
+            "5000": "包裹派送中",
+            "5001": "包裹正在派送至收件人",
+            "5002": "已向收件人发送短信通知",
+            "5003": "包裹正在派送至自提柜",
+            "5004": "包裹正在派送至自提点/商店",
+            "7000": "收件人不在家，第二次尝试：",
+            "7001": "收件人不在家，包裹将在分拨中心保存 5 天",
+            "7002": "收件人不在家",
+            "7003": "收件人不在家，包裹可在自提点领取",
+            "7004": "按请求存放",
+            "8000": "退回寄件方",
+            "8001": "货件已取消",
+            "8500": "附加信息",
+            "9000": "已送达",
+            "9001": "包裹已投递给邻居",
+            "9002": "包裹已投递至自提店",
+            "9003": "包裹已投递至包裹柜",
+            "9004": "包裹已投递至安全放置点",
+            "9005": "包裹已被领取",
+            "9006": "退货已送达",
+            "9500": "拒收",
+            "9501": "包裹未被取走",
+            "9502": "包裹未能送达",
+            "9503": "包裹已改投新地址",
+            "9600": "地址信息不正确"
+        },
+        "common": {
+            "back": "返回",
+            "loading": "加载中...",
+            "error": "错误",
+            "success": "成功",
+            "cancel": "取消",
+            "confirm": "确认",
+            "save": "保存",
+            "edit": "编辑",
+            "delete": "删除",
+            "close": "关闭"
+        }
+    }
+}
