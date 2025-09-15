@@ -526,7 +526,7 @@ curl --location 'https://api.xenor.tech/post_manifest_data/YOUR_API_KEY' \\
               <p className="text-slate-700 md:text-lg">{t("apiDocs.everythingYouNeed")}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="text-white" style={{ backgroundColor: "#be1717" }}>
-                  <Link href="https://documenter.getpostman.com/view/32448221/2sAYdhHVRS" target="_blank">
+                  <Link href="https://documenter.getpostman.com/view/32448221/2sB3HqHJHp" target="_blank">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     {t("apiDocs.postmanCollection")}
                   </Link>
